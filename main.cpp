@@ -7,8 +7,12 @@ int main()
     char choice;
     std::cout<<"Choose an option:\n1 - Exercise 1\n2 - Exercise 2\n3 - Exercise 3\nx - exit"<<std::endl;
     std::cin>>choice;
-    switch(choice) {
-        case '1':
+    int choice_int=static_cast<int>(choice);
+    while (choice=='x'){
+        return 0;
+    }
+    switch(choice_int) {
+        case 49:
             int choice_1;
             float iterations;
             std::cout<<"Choose an approximation method:\n1 - Leibniz\n2 - Wallis"<<std::endl;
@@ -43,7 +47,7 @@ int main()
             }
     }
     switch(choice){
-        case '2':{
+        case 50:{
             int n=0;
             while(n<=255){
                 printf("DEC: %d CHAR: %c\n",n,n);
@@ -60,7 +64,7 @@ int main()
             }
             break;
         }
-        case '3':{
+        case 51:{
             int n;
             int result=1;
             std::cout<<"Enter the number of factorial(must be a positive integer and not bigger than 13): ";
@@ -84,8 +88,6 @@ int main()
             }
             break;
         }
-        case 'x': case 'X':
-            break;
         default:
             std::cout<<"Value of expression is out of scope";
             break;
