@@ -46,7 +46,7 @@ int main()
                 }
             }
     }
-    switch(choice){
+    switch(choice_int){
         case 50:{
             int n=0;
             while(n<=255){
