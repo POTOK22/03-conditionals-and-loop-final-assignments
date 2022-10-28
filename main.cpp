@@ -8,7 +8,7 @@ int main()
     std::cout<<"Choose an option:\n1 - Exercise 1\n2 - Exercise 2\n3 - Exercise 3\nx - exit"<<std::endl;
     std::cin>>choice;
     int choice_int=static_cast<int>(choice);
-    while (choice=='x'){
+    while (choice=='x' || choice=='X'){
         return 0;
     }
     switch(choice_int) {
